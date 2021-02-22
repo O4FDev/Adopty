@@ -1,0 +1,138 @@
+/* Fixing the issue where browsers give text a default 
+padding and margin 
+
+See: https://css-tricks.com/margin-0-padding-0-no-longer-cool/*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-inline: auto;
+    width: min(90%, 100.5rem);
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 100.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+  
+@media (min-width: 1121px) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+    }   
+
+    header h1 {
+        color: #EFEFEF;
+    }
+
+    .container .split div h1 {
+        color: #D6D6D6;
+    }
+
+    .container .split div h2 {
+        color: #D6D6D6;
+    }
+
+    .container .split div p {
+        color: #D6D6D6;
+    }
+
+    .container .split div .button {
+        background-color: #90EE90;
+    }
+
+    .container .split div button a {
+        color: #053501;
+    }
+}
+
+/* Content */
+
+header h1 {
+    font-family: Lobster;
+    font-size: 4rem;
+    margin-top: 2.875rem;
+    margin-bottom: 7rem;
+}
+
+.container .split div h1 {
+    font-family: Quicksand;
+    font-size: 6rem;
+    padding-bottom: 1.125rem;
+}   
+
+.container .split div h2 {
+    font-family: Quicksand;
+    font-size: 3rem;
+    padding-bottom: 1.4375rem;
+}  
+
+.container .split div p {
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    padding-bottom: 2.3125rem;
+}  
+
+.container .split div .button {
+    background-color: #90EE90;
+    width: 26.0625rem;
+    height: 6.25rem;
+}  
+
+.container .split div a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #0D470F;
+    text-decoration: none;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: translate(35%,100%);
+} 
+
+.container .split div img {
+    display: block;
+    max-width: 100%;
+    margin-left: 25%;
+    transform: translate(-10%, -0%);
+    width: 24.4375rem;
+    height: 21.25rem;
+    transform: matrix(-1, -0.01, -0.01, 1, 0, 0);
+    object-fit: contain;
+}  
+
+@media (min-width: 1121px) {
+    img {
+        display: relative;
+        transform: translate(-10%, -0%);
+        margin-left: 0;
+        margin-top: 3em;
+    }
+
+}
