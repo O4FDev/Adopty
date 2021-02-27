@@ -117,6 +117,11 @@ header h1 {
     transform: translate(35%,100%);
 } 
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .container .split div img {
     display: block;
     max-width: 100%;
