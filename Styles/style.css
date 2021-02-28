@@ -65,6 +65,7 @@ header {
 
     .container .split div .button {
         background-color: #90EE90;
+        cursor: pointer;
     }
 
     .container .split div button a {
