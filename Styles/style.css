@@ -15,7 +15,7 @@ header {
     width: min(90%, 100.5rem);
 }
 
-.container {
+main {
     margin-inline: auto;
     width: min(90%, 100.5rem);
 }
@@ -51,24 +51,24 @@ header {
         color: #EFEFEF;
     }
 
-    .container .split div h1 {
+    main .split div h1 {
         color: #D6D6D6;
     }
 
-    .container .split div h2 {
+    main .split div h2 {
         color: #D6D6D6;
     }
 
-    .container .split div p {
+    main .split div p {
         color: #D6D6D6;
     }
 
-    .container .split div .button {
+    main .split div .button {
         background-color: #90EE90;
         cursor: pointer;
     }
 
-    .container .split div button a {
+    main .split div button a {
         color: #053501;
     }
 }
@@ -82,31 +82,31 @@ header h1 {
     margin-bottom: 7rem;
 }
 
-.container .split div h1 {
+main .split div h1 {
     font-family: Quicksand;
     font-size: 6rem;
     padding-bottom: 1.125rem;
 }   
 
-.container .split div h2 {
+main .split div h2 {
     font-family: Quicksand;
     font-size: 3rem;
     padding-bottom: 1.4375rem;
 }  
 
-.container .split div p {
+main .split div p {
     font-family: Quicksand;
     font-size: 1.5rem;
     padding-bottom: 2.3125rem;
 }  
 
-.container .split div .button {
+main .split div .button {
     background-color: #90EE90;
     width: 26.0625rem;
     height: 6.25rem;
 }  
 
-.container .split div a {
+main .split div a {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -118,7 +118,7 @@ header h1 {
     transform: translate(35%,100%);
 } 
 
-.container .split div img {
+main .split div img {
     display: block;
     max-width: 100%;
     margin-left: 25%;
@@ -140,7 +140,7 @@ header h1 {
 }
 
 @media (max-width: 1120px) {
-    .container .split div img  {
+    main .split div img  {
         padding-top: 2em;
         margin-left: 1em;
     }
