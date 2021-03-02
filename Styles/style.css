@@ -42,41 +42,10 @@ main {
 
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000000;
-    }   
-
-    header h1 {
-        color: #EFEFEF;
-    }
-
-    main .split div h1 {
-        color: #D6D6D6;
-    }
-
-    main .split div h2 {
-        color: #D6D6D6;
-    }
-
-    main .split div p {
-        color: #D6D6D6;
-    }
-
-    main .split div .button {
-        background-color: #90EE90;
-        cursor: pointer;
-    }
-
-    main .split div button a {
-        color: #053501;
-    }
-}
-
 /* Content */
 
 header {
-    background: linear-gradient(to right, #ffffff, #ffffff 70%);
+    background: linear-gradient(to right, #ffffff00, #ffffff00 70%);
 }
 
 header h1 {
@@ -137,6 +106,40 @@ main .split div img {
     transform: matrix(-1, -0.01, -0.01, 1, 0, 0);
     object-fit: contain;
 }  
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+    }   
+
+    header h1 {
+        color: #EFEFEF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: currentColor;
+    }
+
+    main .split div h1 {
+        color: #D6D6D6;
+    }
+
+    main .split div h2 {
+        color: #D6D6D6;
+    }
+
+    main .split div p {
+        color: #D6D6D6;
+    }
+
+    main .split div .button {
+        background-color: #90EE90;
+        cursor: pointer;
+    }
+
+    main .split div button a {
+        color: #053501;
+    }
+}
 
 @media (min-width: 1121px) {
     img {
