@@ -43,11 +43,6 @@ main {
 }
 
 /* Content */
-
-header {
-    background: linear-gradient(to right, #ffffff00, #ffffff00 70%);
-}
-
 header h1 {
     font-family: Lobster;
     font-size: 4rem;
@@ -55,9 +50,6 @@ header h1 {
     font-weight: normal;
     margin-top: 2.875rem;
     margin-bottom: 7rem;
-    background: linear-gradient(111.4deg, #FF1616 -2.82%, #FFA500 85.92%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
 main .split div h1 {
@@ -115,8 +107,6 @@ main .split div img {
 
     header h1 {
         color: #EFEFEF;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: currentColor;
     }
 
     main .split div h1 {
